@@ -1,10 +1,10 @@
-# TextViewOutline
-This is a demo project on how to create a TextView with an outer stroke.
+# Android TextViewOutline Demo
+This is a demo project on how to create a `TextView` with an outer stroke.
 
 ![textview outline preview](https://user-images.githubusercontent.com/44326908/100282904-239b6e00-2f75-11eb-965a-2054d0f7ee8f.jpg)
 
-After creating the `TextViewOutline` class as shown in the project or youtube tutorial, simply call the `<TextViewOutline />` as a normal `<TextView />` inside your layout (see bottom for easy copy/paste).
-```
+* After creating the `TextViewOutline` class as shown in the project, simply call the `<TextViewOutline />` as a normal `<TextView />` inside your layout:
+```xml
 <games.moisoni.textviewoutline.TextViewOutline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,8 +14,8 @@ After creating the `TextViewOutline` class as shown in the project or youtube tu
         app:outlineSize="3dp" />
 ```
 
-Optionally, you can add shadow.
-```
+* Optionally, you can cast shadow:
+```xml
 <games.moisoni.textviewoutline.TextViewOutline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,10 +29,10 @@ Optionally, you can add shadow.
         app:outlineSize="3dp" />
 ```
 
-**Steps:**
+# Steps:
 
-First create the `attrs.xml` inside `values` folder:
-```
+* First create the `attrs.xml` inside `values` folder:
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="TextViewOutline">
@@ -46,8 +46,8 @@ First create the `attrs.xml` inside `values` folder:
 </resources>
 ```
 
-Then, create the `TextViewOutline` class:
-```
+* Then, create the `TextViewOutline` class:
+```java
 public class TextViewOutline extends AppCompatTextView {
 
     private static final int DEFAULT_OUTLINE_SIZE = 0;
